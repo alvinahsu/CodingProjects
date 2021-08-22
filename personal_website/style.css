@@ -1,0 +1,495 @@
+html{
+    max-width: 100%;
+    /*overflow-x: hidden; */
+}
+body{
+    margin: 0;
+    font-family: sans-serif, Arial;
+    background-image: url('images/background-color.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Loading animation */
+#loader-wrap{
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    transition: opacity 2s;
+}
+.inner-text{
+    margin: auto;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+}
+.loader {
+    display: flex;
+    position: absolute;
+    top: 48vh;
+    left: 48vw;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+    transition: opacity 3s;
+}
+  
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+}
+  
+.inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #000000;
+}
+  
+.inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+}
+  
+.inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #000000;
+}
+  
+@keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+  
+@keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+  
+@keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+/******************/
+
+/* Top-Left Nav Styling */
+#logo{
+    font-size: 2rem;
+    padding: .7rem;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top:0;
+    left:0;
+}
+#name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#menu{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.header-nav{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    z-index: 50;
+}
+
+.nav-left-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+}
+
+
+.header-nav:hover > #logo{
+    color: grey;
+    cursor: pointer;
+    border-color: grey;
+}
+.header-nav.left:hover{
+    color: grey;
+    cursor: pointer;
+    border-color: grey;
+}
+
+.nav-right-text{
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.nav-right-text:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+/* Full screen menu navigation */
+
+
+/********************/
+
+/* Top-right Nav Styling with Animation */
+.nav-right-text:hover .line{
+    stroke: grey;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+/* Menu full screen animation */
+.menu-fullscreen ul li{
+    list-style: none;
+    margin: 35px 0;
+}
+
+.menu-fullscreen ul li a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.menu-fullscreen{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(97, 94, 94);
+    transition: 1s;
+}
+
+.socials{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.s-icon{
+    /*5 4 */
+    width: 5rem;
+    height: 4rem;
+    margin: 1rem;
+}
+
+.s-icon:hover{
+    transform: scale(1.2);
+
+}
+
+.lite-text{
+    color: #333;
+    font-size: 200px;
+    letter-spacing: 100px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -50%);
+    font-weight: 800;
+    z-index: -1;
+}
+
+
+/********************/
+
+/* Menu icon animation */
+.menu:hover .line{
+    stroke: grey;
+}
+
+.line {
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+    stroke: white;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+    stroke: white;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+    stroke: white;
+}
+
+/********************/
+
+/* Opening text syling */
+.image-dim{
+    margin-right: 2rem;
+    height: 80vh;
+}
+#self-portrait{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.opening-text{
+    display: flex;
+    justify-content: space-between;
+    overflow-anchor: none;
+}
+.opening-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: 10vw;
+}
+
+#Hello{
+    font-weight: bold;
+    font-family: sans-serif, Arial;
+    display: flex;
+    font-size: 500%;
+}
+
+.opener{
+    font-family: sans-serif, Arial;
+    color: grey;
+    font-size: 150%;
+    width: 40rem;
+    margin-top: 1rem;
+}
+
+.profile{
+    font-family: sans-serif, Arial;
+    color: rgb(177, 172, 172);
+    font-size: 120%;
+    width: 40rem;
+}
+
+.profile-buttons{
+    margin-top: 1rem;
+}
+
+#resume, #blog{
+    color: rgb(59, 56, 56);
+}
+
+.profile-buttons a{
+    text-decoration: none;
+}
+
+
+/********************/
+
+/* Button hover styling animation */
+.profile .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/********************/
+
+/* About me */
+.About-me{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+.top-header-me{
+    color: grey;
+    font-size: 125%;
+    letter-spacing: .3rem
+}
+.header-me{
+    font-size: 400%;
+    font-weight: bold;
+}
+/* Redict menu to content */
+#a-me{
+    height: 7rem;  
+    pointer-events: none;
+}
+#w-ex{
+    height: 2rem;  
+    pointer-events: none;
+}
+#proj{
+    height: 2rem;  
+    pointer-events: none;
+}
+
+.header-body{
+    margin-top: 1rem;
+    width: 75vw;
+    color:rgb(59, 56, 56);
+    font-size: 125%;
+    letter-spacing: 2px;
+}
+
+.about-line{
+    width: 55vh;
+    height: 1rem;
+    background-color: rgb(228, 225, 225);
+}
+
+.about-container{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+.about-container:hover > .education{
+    opacity: 1;
+}
+.about-container:hover > .hover-me{
+    opacity: 0;
+}
+#ucsd{
+    width: 25vw;
+    height: 45vh;
+    display: block;
+
+}
+.education{
+    margin-left: 5%;
+    opacity: 0;
+    transition: .5s;
+}
+.education > li{
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 125%;
+    letter-spacing: .1em;
+    color:rgb(59, 56, 56);
+}
+.hover-me{
+    position: absolute;
+    z-index: -1;
+    font-size: 5rem;
+    margin-left: 40%;
+    color:rgb(216, 210, 210);
+    opacity: 1;
+    transition: .5s;
+}
+
+.image-container{
+    display: flex;
+}
+.side-image{
+    margin-top: 2rem;
+    height: 65vh;
+    width: 35vw;
+    margin-right: 15rem;
+}
+
+/* Footer object */
+.socials-body{
+    display: flex;
+    justify-content: center;
+}
+
+.social-elements{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact{
+    font-size: 3vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(117, 117, 117);
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/***************/

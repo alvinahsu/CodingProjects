@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/icon.png">
+        <script src="script.js"></script>
+        <title>Alvin Hsu</title>
+    </head>
+    <body>
+
+        <div id="loader-wrap" class="loader-wrapper">
+            <div id="loader-inside" class="loader">
+                <span class="inner-text"> AH </span>
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+
+        <!-- Top navagation bar-->
+        <nav>
+            <!-- Top left navagation bar -->
+            <div id="left-text" class="header-nav left" onclick='scrollToTop()'>
+                    <span id="logo">AH</span>
+                    <div class="nav-left-text">
+                    <span id="name"> Alvin Hsu </span>
+                    <span id="title"></span>
+                </div>
+            </div>
+            <!-- Top right navagation bar -->
+            <div class="header-nav">
+                <!-- Menu navigation w/ animation-->
+                <div id="nrt" class="nav-right-text" onclick="openMenu()" aria-label="Main Menu">
+                    <span id="menu"> MENU</span>
+                    <button class="menu">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 
+                          94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 
+                          85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 
+                          L 25.000021,25.000058" />
+                          <path class="line line2" d="M 20,50 H 80" />
+                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 
+                          94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 
+                          85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 
+                          L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </div>
+            </div>       
+
+            <div id="pop-menu" class="menu-fullscreen">
+                <ul>
+                    <li><a class="hover-underline-animation" href="index.html#a-me" onclick="openMenu()">About Me</a></li>
+                    <li><a class="hover-underline-animation" href="index.html#w-ex" onclick="openMenu()">Work Experience</a></li>
+                    <li><a class="hover-underline-animation" href="index.html#proj" onclick="openMenu()">Personal Projects</a></li>
+                </ul>
+                <span class="socials">
+                    <a href="https://www.linkedin.com/in/alvinahsu" target="_blank" >
+                        <img id="link" class="s-icon" src='images/icon-linkedin.png' alt="icon of linkedin">
+                    </a>
+                    <a href="mailto: alvinhsuho@yahoo.com" target="_blank" >
+                        <img id="mail" class="s-icon" src='images/icon-mail.png' alt="icon of mail">
+                    </a>
+                    <a href="https://github.com/alvinhsu11" target="_blank" >
+                        <img id="git" class="s-icon" src='images/icon-github.png' alt="icon of github">
+                    </a>
+                </span>
+                <span class="lite-text"> MENU</span>
+            </div>
+        </nav>
+
+        <!-- Opening text & image -->
+        <section>
+            <div class="opening-text">
+                <div class="opening-header">
+                    <div class="about-line"></div>
+                    <span id="Hello"></span>
+                    <span class="opener">My name is Alvin Hsu and I am a second year Computer Science
+                        student at the University of California San Diego.
+                    </span>
+                    <div class="profile-buttons">
+                        <span class="profile">Read my 
+                            <a href="redirect/myResume.pdf" target="_blank" 
+                            class="hover-underline-animation" id="resume"><b>Resume</b></a>
+                        OR visit my 
+                            <a href="#" target="_blank" class="hover-underline-animation" 
+                            id="blog"><b>Blog Page</b></a></span>
+                    </div>
+                </div>
+                <div class="opening-header">
+                    <div class="image-dim">
+                        <img id="self-portrait" src="images/personal-image.png" alt="image of myself">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle content headers -->
+            <div class="About-me">
+                <div id="a-me"></div>
+                <div class="about-line"></div>
+                <span class="top-header-me"> Who am I?</span>
+                <span class="header-me"> About Me </span>
+                    <span class=header-body> My name is Alvin and I was raised in San Diego, California.
+                        I wrote my first line of code when I started college and I've been hooked ever since.
+                        Now, it is my passion solving problems through code and creating real world applications.
+                        I am currently pursuing a B.S. in Computer Science with a minor in Business 
+                        at UCSD and is expected to graduate in 2024.
+                    </span>
+                <div class="about-container">
+                    <img id="ucsd" class="ucsd-img" src="images/ucsd-logo.png" alt="logo of ucsd"> 
+                    <ul id="a-education" class="education">
+                        <li>Overall GPA: <b>4.0</b> Major GPA: <b>4.0</b></li>
+                        <li><u>Classes taken:</u></li>
+                        <li><b>CSE11</b> : Introduction to Computer Science & Object-Oriented Programming</li>
+                        <li><b>CSE12</b> : Basic Data Struct & OO Design</li>
+                        <li><b>CSE15L</b>: Software Tools and Techniques Lab</li>
+                        <li><b>CSE20</b> : Discrete Math</li>
+                        <li><b>CSE21</b> : Mathematics for Algorithms and Systems</li>
+                        <li><b>CSE30</b> : Computer Organiz & Systms Progrm</li>
+                    </ul>
+                    <span class="hover-me">Education</span>
+                </div>
+            </div>
+
+            <div id="w-ex"></div>
+            <div class="About-me">
+                <div class="about-line"></div>
+                <span class="top-header-me"> How do I perform? </span>
+                <span class="header-me"> Work Experience </span>
+                <div class="image-container">
+                    <img class="side-image" src="images/warren-logo.png" alt="logo of warren college">
+                    <img class="side-image" src="images/warren-logo.png" alt="logo of warren college">
+                </div>
+            </div>
+
+            <div id="proj"></div>
+            <div class="About-me">
+                <div class="about-line"></div>
+                <span class="top-header-me"> What have I done? </span>
+                <span class="header-me"> Personal Projects </span>
+            </div>
+        </section>
+
+        <footer>
+            <span class="footer-contact"> ⇃ Get in contact with me ⇂ </span>
+            <span class="socials-body">
+                <div class="social-elements">
+                    <a href="https://www.linkedin.com/in/alvinahsu" target="_blank" >
+                        <img id="link" class="s-icon" src='images/icon-linkedin.png' alt="icon of linkedin">
+                    </a>
+                    <a href="mailto: alvinhsuho@yahoo.com" target="_blank" >
+                        <img id="mail" class="s-icon" src='images/icon-mail.png' alt="icon of mail">
+                    </a>
+                    <a href="https://github.com/alvinhsu11" target="_blank" >
+                        <img id="git" class="s-icon" src='images/icon-github.png' alt="icon of github">
+                    </a>
+                </div>
+            </span>
+        </footer>
+    </body>
+</html>
