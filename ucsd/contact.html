@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script defer src="node_modules/swup/dist/swup.min.js"></script> 
+        <script defer src="script.js"></script>
+    </head>
+    <header>
+        <nav>
+            <div class="header-nav">
+                <a href="/ucsd/index.html"><img class="logo" src="images/UCSD_logo.png" alt="image of ucsd logo"></a>
+            </div>
+            <div class="header-nav">
+                <ul id="list">
+                    <li><a href="/ucsd/revelle.html"> Revelle</a></li>
+                    <li><a href="/ucsd/muir.html"> Muir</a></li>
+                    <li><a href="/ucsd/marshall.html"> Marshall</a></li>
+                    <li><a href="/ucsd/warren.html"> Warren</a></li>
+                    <li><a href="/ucsd/roosevelt.html"> Roosevelt</a></li>
+                    <li><a href="/ucsd/sixth.html"> Sixth</a></li>
+                    <li><a href="/ucsd/seventh.html"> Seventh</a></li>
+                    <li><a href="/ucsd/contact.html"> Contact</a></li>
+                </ul>
+                <input type="checkbox" id="check" onclick="openMenu()">
+                <label for="check" class="checkbtn">
+                    <i class="material-icons" style="font-size: 3rem;"> menu</i>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <main id="swup" class="transition-fade">
+            <div class="contact-section">
+                <h1>Contact Me</h1>
+                <div class="border"></div>
+                <form class="contact-form" action="mail.php" method="post">
+                    <input type="text" name="name" class="contact-form-text" placeholder="Your Name">
+                    <input type="email" name="email" class="contact-form-text" placeholder="Your Email">
+                    <textarea class="contact-form-text" name="message" placeholder="Your message"></textarea>
+                    <input type="submit" class="contact-form-btn" value="Submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

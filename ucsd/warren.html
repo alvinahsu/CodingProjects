@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Warren College</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script defer src="node_modules/swup/dist/swup.min.js"></script> 
+        <script defer src="script.js"></script>
+    </head>
+    <header>
+        <nav>
+            <div class="header-nav">
+                <a href="/ucsd/index.html"><img class="logo" src="images/UCSD_logo.png" alt="image of ucsd logo"></a>
+            </div>
+            <div class="header-nav">
+                <ul id="list">
+                    <li><a href="/ucsd/revelle.html"> Revelle</a></li>
+                    <li><a href="/ucsd/muir.html"> Muir</a></li>
+                    <li><a href="/ucsd/marshall.html"> Marshall</a></li>
+                    <li><a href="/ucsd/warren.html"> Warren</a></li>
+                    <li><a href="/ucsd/roosevelt.html"> Roosevelt</a></li>
+                    <li><a href="/ucsd/sixth.html"> Sixth</a></li>
+                    <li><a href="/ucsd/seventh.html"> Seventh</a></li>
+                    <li><a href="/ucsd/contact.html"> Contact</a></li>
+                </ul>
+                <input type="checkbox" id="check" onclick="openMenu()">
+                <label for="check" class="checkbtn">
+                    <i class="material-icons" style="font-size: 3rem;"> menu</i>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <main id="swup" class="transition-fade">
+            <div class="college">
+                <div id="revelle" class="college-header">
+                    <div class="class-top">
+                        <span class="college-name">Warren</span>
+                        <span class="moto">Toward a Life in Balance </span>
+                        <div class="line"></div>
+                        <span class="phil"> The Earl Warren College motto, "Toward a Life in Balance," is 
+                            inspired by the philosophy of our namesake, former Chief Justice Earl Warren. 
+                            The College is dedicated to cultivating ethically responsible citizen scholars 
+                            who will flourish during their careers at UC San Diego and beyond.
+                        </span>
+                        <hr>
+                        <div class="college-images">
+                            <img class="ci" src="images/warren-map.JPG">
+                            <img class="ci" src="images/warren-college.jpg">
+                        </div>
+                        <span class="phil">
+                            There are a total of <b>4</b> general education requirements for Warren College: Warren Writing,
+                            Ethics and Society, Formal Skills, and Programs of Concentration (PofCs) or Area Studies.
+                        </span>
+
+                        <span class="ge-name">Warren Writing</span>
+                        <div class="ge-container">
+                            <span class="ge-body">A two-course sequence that must be taken at UCSD.
+                            </span>
+                            <span class="ge-body"></span>
+                            <ul class="ge-courses">
+                                <li>First: WCWP 10A</li>
+                                <li>Second: WCWP 10B</li>
+                            </ul>
+                            <span class="ge-body">All students must satisfy UC Entry Level Writing Requirement before enrolling
+                                in WCWP 10A. Must be take for a <b>Letter Grade</b>
+                            </span>
+                        </div>
+
+                        <span class="ge-name">Ethics and Society</span>
+                        <div class="ge-container">
+                            <span class="ge-body">A two-course sequence that must be taken at UCSD. Courses may not overlap
+                                with any other general-education requirement.
+                            </span>
+                            <br>
+                            <ul class="ge-courses">
+                                <li>First: PHIL 27 or POLI 27</li>
+                                <li>Second: PHIL 28 or POLI 28</li>
+                            </ul>
+                            <span class="ge-body">You must complete the Warren Writing requirement before enrolling in 
+                                either PHIL 27 or POLI 27.
+                            </span>
+                        </div>
+
+                        <span class="ge-name">Formal Skills</span>
+                        <div class="ge-container">
+                            <span class="ge-body"> Two courses in calculus, symbolic logic, computer programming 
+                                and/or statistics are required from the following list:
+                            </span>
+                            <ul class="ge-courses">
+                                <li>HDS 60
+                                    MATH 3C, 4C
+                                    MATH 10A or 20A
+                                    MATH 10B or 20B
+                                    MATH 11, 18</li>
+                                <li>PHIL 10, 12
+                                    POLI 30 or 30D, 5 or 5D (or Econ 5)
+                                    PSYC 60, 70
+                                    SOCI 60</li>
+                                <li>LIGN 17
+                                    COGS 3, 8, 14A, 14B
+                                    COGS 18/CSE 7
+                                    CSE 3, 8A, 8B, 11</li>
+                                <li>CSS 1, 2ECE 5, 15, 25
+                                    MAE 5
+                                    NANO/CENG 15</li>
+                            </ul>
+                            <span class="ge-body"> Courses may overlap with your major, minor, or 
+                                other general education requirements.
+                            </span>
+                        </div>
+
+                        <span class="ge-name">Programs of Concentration (PofCs) or Area Studies</span>
+                        <div class="ge-container">
+                            <span class="ge-body">Students are required to complete two PofCs or Area Studiesoutside of 
+                                your major discipline.</span>
+                            <span class="ge-body">They must represent all <b>three</b> disciplines:</span>
+                            <ol class="ge-courses">
+                                <li>Humanities and Fine Arts</li>
+                                <li>Natural Sciences, Math, and Engineering</li>
+                                <li>Social Sciences</li>
+                            </ol>
+                            <span class="ge-body"><b>PofCs are required for Non-B.S. Engineering Majors</b></span>
+                            <span class="ge-body"><b>Area Studies are required for B.S. Engineering Majors ONLY</b></span>
+                            <ul class="ge-courses">
+                                <li>Learn more about choosing PofCs 
+                                    <a href="https://warren.ucsd.edu/academics/general-education/programs-of-concentration.html">
+                                    here</a>.</li>
+                                <li>Learn more about choosing Area studies 
+                                    <a href="https://warren.ucsd.edu/academics/general-education/area-studies.html"> here</a></li>
+                                <li>You must contact Warren Advising to add your choices to your degree audit. You are highly encouraged
+                                    to contact them if you have questions regarding this requirement. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="class-top">
+                        <img class="college-logo" src="images/WarrenCollegeLogo-2020-500.png" alt="logo of revelle college">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
