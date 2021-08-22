@@ -9,6 +9,6 @@ that I have made!
 
 **Pojects(so far)**
 
-TicTacToe (with interactive features)
-Personal Website
-Informational website about UCSD colleges
+TicTacToe (with interactive features)  
+Personal Website  
+Informational website about UCSD colleges  
