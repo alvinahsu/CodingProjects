@@ -12,3 +12,6 @@ that I have made!
 TicTacToe (with interactive features)  
 Personal Website  
 Informational website about UCSD colleges  
+Backend User Registration and Deletion Database  
+Sorting Visualizer  
+
