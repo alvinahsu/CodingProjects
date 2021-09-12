@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Deletion</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1> User Deletion Form</h1>
+    <form class="form" id="myForm">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <button type="submit">Delete</button>
+    </form>
+    <script>
+        const myForm = document.getElementById('myForm');
+
+        myForm.addEventListener('submit', function(e){
+            e.preventDefault(); //don't refresh page upon submit
+
+            const formData = new FormData(this); //this refers to myForm
+
+            fetch('login.php', {
+            method: 'post',
+            body: formData
+            }).then(function (response){
+                return response.text();
+            }).then(function(text){
+                console.log(text);
+            }).catch(function(error){
+                console.error(error)
+            })
+        });
+
+    
+    </script>
+</body>
+
+</html>
